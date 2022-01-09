@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Simple Tasks List
+  </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+
+
+  <link href="list.css" rel="stylesheet">
+  <script defer src="list.js"></script>
+</head>
+<body>
+
+<div class="page-content page-container" id="page-content">
+  <div class="padding">
+    <div class="row container d-flex justify-content-center">
+      <div class="col-md-12">
+        <div class="card px-3">
+          <div class="card-body">
+            <h1 class="card-title">Tasks</h1>
+            <div id="todo-p" class=" add-items d-flex">
+              <i class="icon icon-plus"></i>
+              <input type="text" class="form-control todo-list-input" id="todo-item" placeholder="Type to add new task" onclick="showButtons('todo-buttons');" onkeyup="enableButtons();" required>
+              <button id = "avatar" disabled=true class="icon img-avatar" ></button>
+            </div>
+            <div id="todo-buttons"  style="display: none;">
+              <button id = "btn-open" disabled=true  class="btn btn-square btn-open btn-sm font-weight-bold todo-list-add-btn " ><span class="icon icon-open"></span><span class="button-text"> Open</span></button>
+              <button id = "btn-today" disabled=true class="btn btn-square btn-sm font-weight-bold todo-list-add-btn" ><span class="icon icon-today"></span> <span class="button-text">Today</span></button>
+              <button id = "btn-msj" style = "display: none" disabled=true class="btn btn-square btn-sm font-weight-bold todo-list-add-btn" ><span class="icon icon-message"></span></button>
+              <button id = "btn-public" disabled=true class="btn btn-square btn-sm font-weight-bold todo-list-add-btn" ><span class="icon icon-public"></span> <span class="button-text">Public</span></button>
+              <button id = "btn-normal" disabled=true class="btn btn-square btn-sm font-weight-bold todo-list-add-btn" ><span class="icon icon-normal"></span><span class="button-text"> Normal</span></button>
+              <button id= "todo-subok" class="btn btn-ok btn-sm add btn btn-primary" onclick="changeInitial();" ><span class="button-text"> Ok</span></button>
+              <button id = "btn-estimation" disabled=true class="btn btn-square btn-sm font-weight-bold todo-list-add-btn" ><span class="icon icon-estimation"></span><span class="button-text"> Estimation</span></button>
+              <button id = "btn-dele" style = "display: none" disabled=true class="btn btn-square btn-sm font-weight-bold todo-list-add-btn" ><span class="icon icon-delete"></span></button>
+              <button id = "btn-savedata" style = "display: none" disabled=true class="btn btn-square btn-sm font-weight-bold todo-list-add-btn" ><span class="icon icon-savedata"></span></button>
+              <form id="todo-add">
+                <button id = "btn-cancel" type="reset" class="btn btn-cancel font-weight-bold todo-list-add-btn"onclick="changeInitial();"> Cancel</button>
+                <button type="submit" id= "todo-submit" class="btn btn-add btn-sm add btn btn-primary " onclick="changeText();"><span class="button-text"> Add</span></button>
+              </form>
+
+            </div>
+
+          </div>
+
+          <!-- (C) ITEM TEMPLATE -->
+          <template id="todo-template" class="list-wrapper">
+            <div class="todo-row" >
+              <ul class="d-flex flex-column-reverse todo-list">
+                <li>
+                  <span class="icon icon-check"></span>
+                  <div class="form-check">
+                    <label class="form-check-label ">
+                      <input class="checkbox todo-done" value="&#10004;" type="checkbox">  <i class="input-helper"></i>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+
+            <div id = "todo-items" class="todo-item todo-list-input" onclick="enableOptions();"></div>
+              <input type="button" class="todo-del todo-delete" value="&#10006;"/>
+            </div>
+          </template>
+
+
+          <div id="todo-list" class="list-wrapper">
+              <ul class="d-flex flex-column-reverse todo-list">
+                <li>
+                  <div class="form-check"> <label class="form-check-label"> <input class="checkbox" type="checkbox"> Test <i class="input-helper"></i></label> </div> <i class="remove mdi mdi-close-circle-outline"></i>
+                </li>
+              </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
