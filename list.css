@@ -39,20 +39,20 @@
   #btn-ok {
     width: 25px;
     height: 30px;
-    background-image: url("feather/x.svg");
+    background-image: url("x.svg");
     }
 
   #btn-add {
     display: none;
     width: 25px;
     height: 30px;
-    background-image: url("feather/x-square.svg");
+    background-image: url("x-square.svg");
   }
 
   #todo-submit {
     width: 25px;
     height: 30px;
-    background-image: url("feather/plus.svg");
+    background-image: url("plus.svg");
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -60,7 +60,7 @@
   #todo-savedata {
     width: 25px;
     height: 30px;
-    background-image: url("feather/save.svg");
+    background-image: url("save.svg");
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -68,7 +68,7 @@
   #todo-subok {
     width: 25px;
     height: 30px;
-    background-image: url("feather/x.svg");
+    background-image: url("x.svg");
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -299,7 +299,7 @@ body {
   margin-right: 15px
 }
 .remove{
-  background-image: url("feather/trash-2.svg");
+  background-image: url("trash-2.svg");
 }
 .list-wrapper .remove .todo-del {
   cursor: pointer;
@@ -550,50 +550,50 @@ input[type="checkbox"] {
 }
 
 .icon-plus {
-  background-image: url('feather/plus-square.svg');
+  background-image: url('plus-square.svg');
   padding-top: 40px;
 
 }
 
 .icon-open {
-  background-image: url('feather/max.svg');
+  background-image: url('max.svg');
 }
 .icon-today {
-  background-image: url('feather/calendar.svg');
+  background-image: url('calendar.svg');
 }
 .icon-public {
-  background-image: url('feather/unlock.svg');
+  background-image: url('unlock.svg');
 }
 .icon-normal {
-  background-image: url('feather/loader.svg');
+  background-image: url('loader.svg');
 }
 .icon-estimation {
-  background-image: url('feather/disc.svg');
+  background-image: url('disc.svg');
 }
 .icon-message {
-  background-image: url('feather/message-circle.svg');
+  background-image: url('message-circle.svg');
 }
 .icon-delete {
-  background-image: url('feather/trash-2.svg');
+  background-image: url('trash-2.svg');
 }
 .icon-del {
-  background-image: url('feather/x.svg');
+  background-image: url('x.svg');
 }
 .icon-save {
-  background-image: url('feather/save.svg');
+  background-image: url('save.svg');
 }
 .icon-mas {
-  background-image: url('feather/plus.svg');
+  background-image: url('plus.svg');
 }
 .icon-check {
   border: solid #00bfff;
   color: #00bfff;
   position: absolute;
   left: 20px;
-  background-image: url('feather/check-square.svg');
+  background-image: url('check-square.svg');
 }
 .img-avatar {
-  background-image: url('feather/avatar_small.jpg');
+  background-image: url('avatar_small.jpg');
   border-image: round;
   display: none;
   background-repeat: no-repeat;
@@ -643,7 +643,7 @@ input[type="checkbox"] {
 }
 
 #todo-save, .todo-done {
-  background-image: url('feather/plus-square.svg');
+  background-image: url('plus-square.svg');
   background: #2781cf; }
 
 .todo-bold {
